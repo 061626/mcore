@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4F8DFF</color>
+    <color name="colorPrimaryDark">#4F8DFF</color>
+    <color name="colorAccent">#4F8DFF</color>
+
+    <color name="bar_bg_color">#4F8DFF</color>
+    <color name="all_bg_color">#F5F5F5</color>
+
+    <color name="press">#fff</color>
+
+    <color name="m_white">#fff</color>
+
+</resources>

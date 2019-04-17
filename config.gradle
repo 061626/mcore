@@ -1,0 +1,71 @@
+/**
+ * 全局配置文件，统一处理依赖
+ * 需要在根目录下的build.gradle中进行引入
+ */
+ext {
+
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: 28,
+            minSdkVersion    : 19,
+            targetSdkVersion : 28
+    ]
+    //version
+    supportVersion = "28.0.0"
+
+    //supportLibs
+    support = [
+            supportV4       : "com.android.support:support-v4:${supportVersion}",
+            appCompat       : "com.android.support:appcompat-v7:${supportVersion}",
+            cardView        : "com.android.support:cardview-v7:${supportVersion}",
+            recyclerView    : "com.android.support:recyclerview-v7:${supportVersion}",
+            designCompat    : "com.android.support:design:${supportVersion}",
+            constraintLayout: 'com.android.support.constraint:constraint-layout:1.1.3',
+            vectorDrawable  : 'com.android.support:support-vector-drawable:28.0.0',
+            //流式布局
+            flexbox         : 'com.google.android:flexbox:1.0.0',
+    ]
+
+    //supportThird
+    third = [
+            okhttp3       : 'com.squareup.okhttp3:okhttp:3.11.0',
+            logging       : 'com.squareup.okhttp3:logging-interceptor:3.11.0',
+
+            rxjava        : "io.reactivex.rxjava2:rxjava:2.1.14",
+            rxandroid     : "io.reactivex.rxjava2:rxandroid:2.0.2",
+
+            retrofit      : "com.squareup.retrofit2:retrofit:2.4.0",
+            converterGson : "com.squareup.retrofit2:converter-gson:2.4.0",
+            adapterRxjava2: "com.squareup.retrofit2:adapter-rxjava2:2.3.0",
+            converterJaxb : 'com.squareup.retrofit2:converter-jaxb:2.5.0',
+
+            fastjson      : "com.alibaba:fastjson:1.2.54",
+            gson          : "com.google.code.gson:gson:2.8.4",
+            //图片加载控件
+            glide         : "com.github.bumptech.glide:glide:4.3.1",
+            //三级连动控件
+            pickerView    : "com.contrarywind:Android-PickerView:3.2.7",
+            //二维码扫描
+            zxing         : 'com.journeyapps:zxing-android-embedded:3.5.0',
+            //图片压缩
+            luban         : 'top.zibin:Luban:1.1.8',
+            //仿微信拍摄视频
+            camera        : 'cjt.library.wheel:camera:1.1.9',
+            //图片选择器
+            matisse       : 'com.zhihu.android:matisse:$latest_version',
+            //文件选择器
+            filepicker    : 'com.droidninja:filepicker:2.2.0',
+            //未读红点
+            badgeview     : 'q.rorbin:badgeview:1.1.3',
+            //图片预览
+            previewpic    : 'com.bm.photoview:library:1.4.1',
+            //权限判断（基于rxjava）
+            rxpermissions : 'com.github.tbruyelle:rxpermissions:0.10.2',
+            //评价rate
+            ratingbar     : 'me.zhanghai.android.materialratingbar:library:1.3.1',
+            //权限判断（注解方式）
+            anpermissions : 'pub.devrel:easypermissions:2.0.0',
+            //分割
+            multidex      : 'com.android.support:multidex:1.0.3'
+    ]
+}
